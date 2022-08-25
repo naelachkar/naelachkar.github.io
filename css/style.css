@@ -4,31 +4,33 @@
   box-sizing: border-box;
 }
 
-html{
-  font-family: 'IBM Plex Sans Hebrew', Arial, Helvetica, sans-serif;
+html {
+  font-family: "IBM Plex Sans Hebrew", Arial, Helvetica, sans-serif;
   height: 100%;
 }
 
 body {
   background-attachment: fixed; /* -> background image all screen */
-  background-image: linear-gradient(to top, #D6D6FF, white);
-  margin:0;
+  background-image: linear-gradient(to top, #d6d6ff, white);
+  margin: 0;
   padding: 0;
-  min-height:100vh;
+  min-height: 100vh;
 
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .card {
-  background-image: linear-gradient(to bottom, #D6D6FF, white);
+  background-image: linear-gradient(to bottom, #d6d6ff, white);
   border: 5px solid transparent; /* otherwise the hover moves the inside elements */
   border-radius: 15px;
   margin: 10vh auto 0 auto;
   height: 33vw;
+  min-height: 550px;
   padding: 3vh 10vh;
   width: 33vw;
+  min-width: 300px;
 
   display: flex;
   align-items: center;
@@ -44,11 +46,12 @@ body {
   filter: invert(100%);
 }
 
-nav, footer {
+nav,
+footer {
   background-color: #000029;
   color: white;
   width: 100%;
-  
+
   display: flex;
   align-items: start;
   flex-direction: column;
@@ -106,10 +109,11 @@ li a {
 }
 
 li a:hover {
-  background-color: #00007A;
+  background-color: #00007a;
 }
 
-label, select {
+label,
+select {
   display: block;
   font-family: inherit;
   font-weight: bold;
@@ -128,11 +132,14 @@ textarea {
   max-height: 90%;
 }
 
-button, input::placeholder, textarea::placeholder {
-  font-family: 'IBM Plex Sans Hebrew', Arial, Helvetica, sans-serif;
+button,
+input::placeholder,
+textarea::placeholder {
+  font-family: "IBM Plex Sans Hebrew", Arial, Helvetica, sans-serif;
 }
 
-input, textarea {
+input,
+textarea {
   margin-bottom: 1vh;
 }
 
@@ -168,13 +175,14 @@ button:disabled {
   text-decoration: none;
 }
 
-.social-media a, .social-media a :visited {
+.social-media a,
+.social-media a :visited {
   color: black;
 }
 
 .social-media a:hover {
   background-color: transparent; /* overrides default a:hover bckgnd color */
-  color: #00007A;
+  color: #00007a;
 }
 
 .social-media i {
@@ -190,7 +198,7 @@ button:disabled {
 }
 
 .about-me-elements {
-  background-image: linear-gradient(to bottom, #D6D6FF, transparent);
+  background-image: linear-gradient(to bottom, #d6d6ff, transparent);
   border: 2px solid #000029;
   border-radius: 15px;
   margin-left: 14.2857vw;
@@ -226,7 +234,7 @@ button:disabled {
 }
 
 #legend {
-  background-color: #D6D6FF;
+  background-color: #d6d6ff;
   border: 2px #000029;
   border-color: #000029 #000029 #000029 #000029;
   border-radius: 15px 15px 0 0;
@@ -237,9 +245,10 @@ button:disabled {
 }
 
 .btns {
-  margin-top : 1.5vh;
+  margin-top: 1.5vh;
 }
 
-.prev, .next {
+.prev,
+.next {
   min-width: 85.7px;
 }

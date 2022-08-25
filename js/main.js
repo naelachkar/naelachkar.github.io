@@ -2,9 +2,9 @@
 const GITHUB_URL = "https://api.github.com/users/naelachkar";
 
 fetch(GITHUB_URL)
-  .then(function(response) {
+  .then(function (response) {
     return response.json();
-    
+
   })
   .then(function (data) {
     const profileImage = document.getElementById("profile-image");
@@ -18,7 +18,7 @@ function animation() {
   const card = document.getElementById("animation");
 
   function switching() {
-    if (card !== event.target) {return}; /* no children trigger switching */
+    if (card !== event.target) { return }; /* no children trigger switching */
     if (body.classList.contains("triggered")) {
       body.classList.remove("triggered");
       body.style.backgroundImage = "linear-gradient(to top, #CCC, white)";

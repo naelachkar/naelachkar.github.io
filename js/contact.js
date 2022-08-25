@@ -1,9 +1,9 @@
-function disableButton () {
+function disableButton() {
     if (
         !firstName.validity.valid ||
         !email.validity.valid ||
         !comments.validity.valid ||
-        document.getElementById("language-select").value.includes("void")
+        document.getElementById("language-select").value === ""
     ) {
         document.getElementById("submit").disabled = true;
     } else {
