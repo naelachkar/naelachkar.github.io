@@ -11,7 +11,7 @@ html{
 
 body {
   background-attachment: fixed; /* -> background image all screen */
-  background-image: linear-gradient(to top, #CCC, white);
+  background-image: linear-gradient(to top, #D6D6FF, white);
   margin:0;
   padding: 0;
   min-height:100vh;
@@ -22,7 +22,7 @@ body {
 }
 
 .card {
-  background-color: #CCC;
+  background-image: linear-gradient(to bottom, #D6D6FF, white);
   border: 5px solid transparent; /* otherwise the hover moves the inside elements */
   border-radius: 15px;
   margin: 10vh auto 0 auto;
@@ -37,7 +37,7 @@ body {
 }
 
 .card:hover {
-  border: 5px solid #333;
+  border: 5px solid #000029;
 }
 
 .triggered {
@@ -45,7 +45,7 @@ body {
 }
 
 nav, footer {
-  background-color: #333;
+  background-color: #000029;
   color: white;
   width: 100%;
   
@@ -106,7 +106,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #555;
+  background-color: #00007A;
 }
 
 label, select {
@@ -141,7 +141,7 @@ input, textarea {
 }
 
 button {
-  background-color: #333;
+  background-color: #000029;
   border: none;
   border-radius: 5px;
   color: white;
@@ -174,7 +174,7 @@ button:disabled {
 
 .social-media a:hover {
   background-color: transparent; /* overrides default a:hover bckgnd color */
-  color: #555;
+  color: #00007A;
 }
 
 .social-media i {
@@ -190,8 +190,8 @@ button:disabled {
 }
 
 .about-me-elements {
-  background-color: #CCC;
-  border: 2px solid #333;
+  background-image: linear-gradient(to bottom, #D6D6FF, transparent);
+  border: 2px solid #000029;
   border-radius: 15px;
   margin-left: 14.2857vw;
   width: 14.2857vw;
@@ -199,6 +199,7 @@ button:disabled {
 
 .about-me-elements h2 {
   text-align: center;
+  padding-top: 0.5rem;
 }
 
 .about-me-elements p {
@@ -218,16 +219,16 @@ button:disabled {
 }
 
 #map {
-  border: 2px #333;
+  border: 2px #000029;
   border-radius: 0 0 15px 15px;
   border-style: none solid solid solid;
   width: 100%;
 }
 
 #legend {
-  background-color: #CCC;
-  border: 2px #333;
-  border-color: #333 #333 #333 #333;
+  background-color: #D6D6FF;
+  border: 2px #000029;
+  border-color: #000029 #000029 #000029 #000029;
   border-radius: 15px 15px 0 0;
   border-style: solid solid solid solid;
   margin-bottom: 0;

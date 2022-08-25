@@ -18,6 +18,7 @@ function animation() {
   const card = document.getElementById("animation");
 
   function switching() {
+    if (card !== event.target) {return}; /* no children trigger switching */
     if (body.classList.contains("triggered")) {
       body.classList.remove("triggered");
       body.style.backgroundImage = "linear-gradient(to top, #CCC, white)";
