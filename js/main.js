@@ -13,3 +13,21 @@ fetch(GITHUB_URL)
     profileName.innerHTML = data.name;
   });
 
+function animation() {
+  const body = document.body;
+  const card = document.getElementById("animation");
+
+  function switching() {
+    if (body.classList.contains("triggered")) {
+      body.classList.remove("triggered");
+      body.style.backgroundImage = "linear-gradient(to top, #CCC, white)";
+    } else {
+      body.classList.add("triggered");
+      body.style.backgroundImage = "linear-gradient(to top, #333, black)";
+    }
+  }
+
+  card.addEventListener("click", switching);
+}
+
+animation();

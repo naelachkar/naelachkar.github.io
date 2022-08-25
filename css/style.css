@@ -40,14 +40,8 @@ body {
   border: 5px solid #333;
 }
 
-/* @keyframes rotation {
-  from 
-} */
-
-.card:active {
-  background-color: magenta;
-/*   animation-duration: 5s;
-  animation-name: rotation; */
+.triggered {
+  filter: invert(100%);
 }
 
 nav, footer {
