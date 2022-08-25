@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1d03f86dc3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section>
+      <nav>
+        <ul>
+          <li><a href="../index.html" id="homelink">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <form action="https://formspree.io/f/xayknokn" method="POST" class="card">
+        <h1>Contact form</h1>
+        <label for="first Name"><span class="required">* </span>First Name</label>
+            <input type="text" name="firstName" id="firstName" required placeholder="Required">
+        <label for="last Name">Last Name</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Optional">
+        <label for="email"><span class="required">* </span>Email</label>
+            <input type="text" name="email" id="email" required placeholder="Required">
+        <label for="comments"><span class="required">* </span>Type your message</label>
+            <textarea id="comments" name="comments" required placeholder="Required"></textarea>
+        <label for="language-select"><span class="required">* </span>What is your preferred language?</label>
+            <select name="language" id="language-select" required>
+                <option hidden disabled selected value="void">--Choose an option--</option>
+                <option value="english">English</option>
+                <option value="french">Français</option>
+                <option value="portuguese">Português</option>
+                <option value="spanish">Español</option>
+                <option value="hebrew"><span dir="rtl">עברית</span></option>
+            </select>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </section>
+    <footer class="navigation">
+        <div>
+          <ul>
+            <li><a href="../index.html" id="homelink">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div id="lang"></div>
+      </footer>
+  </body>
+  <script src="../js/footer.js"></script>
+  <script src="../js/contact.js"></script>
+</html>

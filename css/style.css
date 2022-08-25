@@ -1,0 +1,249 @@
+/* shared */
+
+* {
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'IBM Plex Sans Hebrew', Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+body {
+  background-attachment: fixed; /* -> background image all screen */
+  background-image: linear-gradient(to top, #CCC, white);
+  margin:0;
+  padding: 0;
+  min-height:100vh;
+
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #CCC;
+  border: 5px solid transparent; /* otherwise the hover moves the inside elements */
+  border-radius: 15px;
+  margin: 10vh auto 0 auto;
+  height: 33vw;
+  padding: 3vh 10vh;
+  width: 33vw;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card:hover {
+  border: 5px solid #333;
+}
+
+/* @keyframes rotation {
+  from 
+} */
+
+.card:active {
+  background-color: magenta;
+/*   animation-duration: 5s;
+  animation-name: rotation; */
+}
+
+nav, footer {
+  background-color: #333;
+  color: white;
+  width: 100%;
+  
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav {
+  margin-bottom: 2.5%;
+  position: sticky;
+  top: 0px;
+}
+
+footer {
+  margin-top: 2.5%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#lang {
+  padding: 0px 16px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 1vh 0 1.5vh 0;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 0 0 1.5vh 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
+
+  display: block;
+  text-align: center;
+}
+
+li a:hover {
+  background-color: #555;
+}
+
+label, select {
+  display: block;
+  font-family: inherit;
+  font-weight: bold;
+  margin-bottom: 2pt;
+}
+
+select {
+  font-weight: normal;
+  margin-bottom: 1vh;
+}
+
+textarea {
+  width: 177px;
+  height: 177px;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+button, input::placeholder, textarea::placeholder {
+  font-family: 'IBM Plex Sans Hebrew', Arial, Helvetica, sans-serif;
+}
+
+input, textarea {
+  margin-bottom: 1vh;
+}
+
+.required {
+  color: red;
+}
+
+button {
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 5px 12px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* index */
+
+.profile-image {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.social-media a, .social-media a :visited {
+  color: black;
+}
+
+.social-media a:hover {
+  background-color: transparent; /* overrides default a:hover bckgnd color */
+  color: #555;
+}
+
+.social-media i {
+  display: block;
+  padding: 0 10px;
+}
+
+/* About */
+
+.about-me {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.about-me-elements {
+  background-color: #CCC;
+  border: 2px solid #333;
+  border-radius: 15px;
+  margin-left: 14.2857vw;
+  width: 14.2857vw;
+}
+
+.about-me-elements h2 {
+  text-align: center;
+}
+
+.about-me-elements p {
+  font-size: 11pt;
+  text-align: justify;
+  padding: 0 1rem;
+}
+
+.maps {
+  margin: 3.25vh auto 0 auto;
+  width: 93.5vw;
+
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+#map {
+  border: 2px #333;
+  border-radius: 0 0 15px 15px;
+  border-style: none solid solid solid;
+  width: 100%;
+}
+
+#legend {
+  background-color: #CCC;
+  border: 2px #333;
+  border-color: #333 #333 #333 #333;
+  border-radius: 15px 15px 0 0;
+  border-style: solid solid solid solid;
+  margin-bottom: 0;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  width: 100%;
+}
+
+.btns {
+  margin-top : 1.5vh;
+}
+
+.prev, .next {
+  min-width: 85.7px;
+}
