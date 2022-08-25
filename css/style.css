@@ -210,6 +210,7 @@ button:disabled {
 .maps {
   margin: 3.25vh auto 0 auto;
   width: 93.5vw;
+  max-height: 75vh;
 
   display: flex;
   align-items: center;
